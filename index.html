@@ -1,34 +1,57 @@
-<!DOCTYPE html>  <html>    <head>    
-  <meta charset="UTF-8">    
-  <title>ALL IN ONE</title>    
-  <meta name="viewport" content="width=device-width, initial-scale=1">    
-  <style>    
-    body { font-family: Arial; background:#0f172a; color:#fff; margin:0; }    
-    header { padding:15px; text-align:center; background:#020617; }    
-    section { padding:15px; }    
-    .card { background:#1e293b; padding:15px; margin:10px 0; border-radius:10px; }    
-    button { width:100%; padding:12px; border:none; border-radius:8px; font-size:16px; }    
-    .test { background:#22c55e; }    
-    .workout { background:#3b82f6; }    
-    .motivation { background:#f59e0b; }    
-  </style>    
-</head>    
-<body>  <header>    
-  <h2>ALL IN ONE</h2>    
-  <p>Class 10 | Test + Workout Focus</p>    
-</header>  <section>    
-  <div class="card">    
-    <h3>📘 Class 10 Tests</h3>    
-    <p>Math & Science | Level Select</p>    
-    <button class="test">Start Test</button>    
-  </div>    <div class="card">    
-    <h3>🏋️ Workout</h3>    
-    <p>20–25 min | Step by Step</p>    
-    <button class="workout">Start Workout</button>    
-  </div>    <div class="card">    
-    <h3>🔥 Motivation Shayari</h3>    
-    <p>Daily Discipline Boost</p>    
-    <button class="motivation">Read Shayari</button>    
-  </div>    
-</section>  </body>    
-</html>    
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>ALL IN ONE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial; background:#0f172a; color:#fff; margin:0; }
+    header { padding:15px; text-align:center; background:#020617; }
+    section { padding:15px; }
+    .card { background:#1e293b; padding:15px; margin:10px 0; border-radius:10px; }
+    button { width:100%; padding:12px; border:none; border-radius:8px; font-size:16px; }
+    .test { background:#22c55e; }
+    .workout { background:#3b82f6; }
+    .motivation { background:#f59e0b; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>ALL IN ONE</h2>
+    <p>Class 10 | Test + Workout Focus</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h3>📘 Class 10 Tests</h3>
+      <p>Math & Science | Level Select</p>
+      <button class="test" onclick="openTest()">Start Test</button>
+    </div>
+
+    <div class="card">
+      <h3>🏋️ Workout</h3>
+      <p>20–25 min | Step by Step</p>
+      <button class="workout" onclick="openWorkout()">Start Workout</button>
+    </div>
+
+    <div class="card">
+      <h3>🔥 Motivation Shayari</h3>
+      <p>Daily Discipline Boost</p>
+      <button class="motivation" onclick="openMotivation()">Read Shayari</button>
+    </div>
+  </section>
+
+  <script>
+    function openTest() {
+      window.location.href = "test.html";
+    }
+    function openWorkout() {
+      window.location.href = "workout.html";
+    }
+    function openMotivation() {
+      window.location.href = "motivation.html";
+    }
+  </script>
+</body>
+</html>
